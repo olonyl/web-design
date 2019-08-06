@@ -1,0 +1,17 @@
+{
+  "name": "natures",
+  "version": "1.0.0",
+  "description": "Landing page for naturs",
+  "main": "index.js",
+  "scripts": {
+    "start": "parallelshell \"npm run serve --watch\" \"npm run sass\"",
+    "serve": "live-server",
+    "sass": "node-sass sass/main.scss css/style.css -w"
+  },
+  "author": "Olonyl",
+  "license": "ISC",
+  "devDependencies": {
+    "node-sass": "^4.11.0",
+    "parallelshell": "^3.0.1"
+  }
+}
