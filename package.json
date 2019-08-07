@@ -11,7 +11,7 @@
   "author": "Olonyl",
   "license": "ISC",
   "devDependencies": {
-    "node-sass": "^4.11.0",
+    "node-sass": "^4.12.0",
     "parallelshell": "^3.0.1"
   }
 }
