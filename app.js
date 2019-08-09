@@ -15,6 +15,9 @@ app.use('/js', express.static(__dirname + '/js'));
 
 //add the router
 app.use('/', router);
-app.listen(process.env.port || 3000);
 
-console.log('Running at Port 3000');
+let port = process.env.PORT || 8000;
+
+app.listen(port, function () {
+    console.log("App is running on port " + port);
+});
