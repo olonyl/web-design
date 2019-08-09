@@ -5,11 +5,14 @@
   "main": "index.js",
   "scripts": {
     "start": "parallelshell \"npm run serve --watch\" \"npm run sass\"",
-    "serve": "live-server",
+    "serve": "node app.js",
     "sass": "node-sass sass/main.scss css/style.css -w"
   },
   "author": "Olonyl",
   "license": "ISC",
+  "dependencies": {
+    "express": "^4.16.4"
+  },
   "devDependencies": {
     "node-sass": "^4.12.0",
     "parallelshell": "^3.0.1"
