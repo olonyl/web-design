@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "dev": "parallelshell \"npm run serve --watch\" \"npm run sass\"",
-    "start": "parallelshell \"npm run serve\"",
+    "start": "node app.js",
     "serve": "node app.js",
     "sass": "node-sass sass/main.scss css/style.css -w"
   },
