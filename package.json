@@ -4,7 +4,8 @@
   "description": "Landing page for naturs",
   "main": "index.js",
   "scripts": {
-    "start": "parallelshell \"npm run serve --watch\" \"npm run sass\"",
+    "dev": "parallelshell \"npm run serve --watch\" \"npm run sass\"",
+    "start": "parallelshell \"npm run serve\"",
     "serve": "node app.js",
     "sass": "node-sass sass/main.scss css/style.css -w"
   },
