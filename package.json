@@ -6,7 +6,7 @@
   "scripts": {
     "dev": "parallelshell \"npm run serve --watch\" \"npm run sass\"",
     "start": "node app.js",
-    "serve": "node app.js",
+    "serve": "nodemon --watch css/*.* --watch img/*.* --watch js --watch index.html app.js",
     "sass": "node-sass sass/main.scss css/style.css -w"
   },
   "author": "Olonyl",

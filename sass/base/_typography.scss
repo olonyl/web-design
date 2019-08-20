@@ -12,6 +12,12 @@
         /* animation: keyframe, time, delay, iterations */
         animation: moveInLeft 1s 1s 1;
         animation-timing-function: ease-out;
+
+        @include respond(phone) {
+            letter-spacing: 1rem;
+            font-family:  5rem;
+        }
+    
     }
 
     &--sub {
@@ -22,6 +28,10 @@
          /* animation: keyframe, time, delay, iterations */
          animation: moveInRight 1s 1s 1;
          animation-timing-function: ease-out;
+
+         @include respond(phone) {
+            letter-spacing: .5rem;
+        }
     }
 }
 
@@ -35,6 +45,15 @@
     color:transparent;
     letter-spacing: .2rem;
     transition: all .2s;
+
+    @include respond(tab-port) {
+        font-size: 3rem;
+    }
+
+    @include respond(phone) {
+        font-size: 2.5rem;
+    }
+
     &:hover {
         transform: skewX(15deg) skewY(2deg);
         text-shadow: .5rem 1rem 2rem rgba($color-black, .2);
